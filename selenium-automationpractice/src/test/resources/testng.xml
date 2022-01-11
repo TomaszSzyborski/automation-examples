@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Example suite">
+
+    <parameter name="global_count" value="5" />
+
+    <test name="Valid Registration">
+        <classes>
+            <class name="com.practice.automationpractice.RegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="Invalid Registration">
+        <classes>
+            <class name="com.practice.automationpractice.InvalidRegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="Valid Login">
+        <classes>
+            <class name="com.practice.automationpractice.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Invalid Login">
+        <classes>
+            <class name="com.practice.automationpractice.InvalidLoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Buy item test">
+        <parameter name="Search term"  value="Summer Dress" />
+        <parameter name="Product name"  value="Printed Summer Dress" />
+        <parameter name="Product list size"  value="4" />
+        <parameter name="Discounted product list size"  value="2" />
+        <parameter name="Product index"  value="1" />
+        <classes>
+            <class name="com.practice.automationpractice.BuyItemsTest"/>
+        </classes>
+    </test>
+
+
+
+</suite>

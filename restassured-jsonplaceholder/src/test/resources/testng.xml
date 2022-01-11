@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Example suite">
+
+    <parameter name="global_count" value="3" />
+
+    <test name="Add comment test">
+        <parameter name="Name"  value="Tomasz Szyborski" />
+        <parameter name="Email"  value="tomasz.szyborski@billennium.com" />
+        <parameter name="Comment"  value="My short and simple comment." />
+        <classes>
+            <class name="com.practice.jsonplaceholder.MaxUserIdTest"/>
+        </classes>
+    </test>
+
+</suite>
